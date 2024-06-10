@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    position: relative;
+    width: 256px;
+    height: 256px;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+  }
+
+  .box img:active {
+    scale: 0.97;
+  }
+  
+  .foreground {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 256px;
+    height: 256px;
+    z-index: 0;
+    filter: blur(15px);
+  }
+  
